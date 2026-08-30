@@ -2,15 +2,15 @@
 
 ## Task 1: Repository and contracts
 
-- [ ] Create the independent Git repository and Python package skeleton.
-- [ ] Commit the spec, ADR, threat model, and exact commands.
+- [x] Create the independent Git repository and Python package skeleton.
+- [x] Commit the spec, ADR, threat model, and exact commands.
 - Verify: `git status --short` shows only intended project files.
 - Dependencies: none.
 
 ## Task 2: Deterministic canary generation
 
-- [ ] RED: tests define seeded probe/manifest bytes and feature coverage.
-- [ ] GREEN: generate valid Bitwarden JSON and instructions.
+- [x] RED: tests define seeded probe/manifest bytes and feature coverage.
+- [x] GREEN: generate valid Bitwarden JSON and instructions.
 - Verify: focused generation tests and repeated seeded byte comparison.
 - Dependencies: Task 1.
 
