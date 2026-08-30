@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VaultCanary migration fidelity</title>
+<style>
+:root { color-scheme: light dark; font-family: ui-sans-serif, system-ui, sans-serif; }
+body { max-width: 72rem; margin: 0 auto; padding: 2rem; line-height: 1.5; }
+.summary { border: 2px solid currentColor; border-radius: .8rem; padding: 1rem 1.25rem; }
+table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+th, td { border-bottom: 1px solid #8888; padding: .65rem; text-align: left; }
+.preserved td:nth-child(2) { color: #138a4b; font-weight: 700; }
+.relocated td:nth-child(2), .missing td:nth-child(2) { color: #c34f14; font-weight: 700; }
+code { overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+<h1>VaultCanary migration fidelity</h1>
+<section class="summary" aria-label="Audit summary">
+<strong>REVIEW</strong>
+<p>9/17 features preserved; 3 relocated; 5 missing</p>
+<p>Run <code>a38c5cf5bf05</code> · Return format
+<code>1password-1pux</code></p>
+</section>
+<table>
+<thead><tr><th>Feature</th><th>Status</th><th>Expected field</th>
+<th>Observed field</th></tr></thead>
+<tbody>
+<tr class="preserved"><td><code>login.title</code></td><td>preserved</td><td><code>title</code></td><td><code>title</code></td></tr>
+<tr class="preserved"><td><code>login.uri</code></td><td>preserved</td><td><code>login.uri</code></td><td><code>login.uri</code></td></tr>
+<tr class="preserved"><td><code>login.username</code></td><td>preserved</td><td><code>login.username</code></td><td><code>login.username</code></td></tr>
+<tr class="preserved"><td><code>login.password</code></td><td>preserved</td><td><code>login.password</code></td><td><code>login.password</code></td></tr>
+<tr class="preserved"><td><code>login.notes</code></td><td>preserved</td><td><code>notes</code></td><td><code>notes</code></td></tr>
+<tr class="preserved"><td><code>login.totp</code></td><td>preserved</td><td><code>login.totp</code></td><td><code>login.totp</code></td></tr>
+<tr class="preserved"><td><code>custom.text</code></td><td>preserved</td><td><code>custom.text.Canary text</code></td><td><code>custom.text.Canary text</code></td></tr>
+<tr class="relocated"><td><code>custom.hidden</code></td><td>relocated</td><td><code>custom.hidden.Canary hidden</code></td><td><code>custom.text.Canary hidden</code></td></tr>
+<tr class="relocated"><td><code>custom.boolean</code></td><td>relocated</td><td><code>custom.boolean.Canary boolean</code></td><td><code>custom.text.Canary boolean</code></td></tr>
+<tr class="preserved"><td><code>unicode.roundtrip</code></td><td>preserved</td><td><code>custom.text.Unicode sample</code></td><td><code>custom.text.Unicode sample</code></td></tr>
+<tr class="relocated"><td><code>folder.assignment</code></td><td>relocated</td><td><code>folder</code></td><td><code>tag.0</code></td></tr>
+<tr class="preserved"><td><code>favorite.status</code></td><td>preserved</td><td><code>favorite</code></td><td><code>favorite</code></td></tr>
+<tr class="missing"><td><code>secure_note.body</code></td><td>missing</td><td><code>notes</code></td><td><code>—</code></td></tr>
+<tr class="missing"><td><code>card.cardholder</code></td><td>missing</td><td><code>card.cardholder</code></td><td><code>—</code></td></tr>
+<tr class="missing"><td><code>card.number</code></td><td>missing</td><td><code>card.number</code></td><td><code>—</code></td></tr>
+<tr class="missing"><td><code>identity.email</code></td><td>missing</td><td><code>identity.email</code></td><td><code>—</code></td></tr>
+<tr class="missing"><td><code>identity.address</code></td><td>missing</td><td><code>identity.address</code></td><td><code>—</code></td></tr>
+</tbody>
+</table>
+<p>This report contains feature identifiers and semantic field paths only. It does not
+copy password-manager item values.</p>
+</main>
+</body>
+</html>

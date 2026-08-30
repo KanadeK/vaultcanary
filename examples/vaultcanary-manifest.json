@@ -1,0 +1,129 @@
+{
+  "features": [
+    {
+      "expected_path": "title",
+      "expected_value": "VaultCanary a38c5cf5bf05 — Login",
+      "feature_id": "login.title",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "login.uri",
+      "expected_value": "https://login-a38c5cf5bf05.example.invalid/account",
+      "feature_id": "login.uri",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "uri"
+    },
+    {
+      "expected_path": "login.username",
+      "expected_value": "canary+a38c5cf5bf05@example.invalid",
+      "feature_id": "login.username",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "login.password",
+      "expected_value": "VCN!a38c5cf5bf05!PASSWORD!7x",
+      "feature_id": "login.password",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "notes",
+      "expected_value": "VCN-a38c5cf5bf05-LOGIN-NOTES",
+      "feature_id": "login.notes",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "login.totp",
+      "expected_value": "otpauth://totp/VaultCanary:a38c5cf5bf05?secret=IIQHIDG3SHHSNEW2PJWS72KGR5GNYZXR&issuer=VaultCanary&algorithm=SHA1&digits=6&period=30",
+      "feature_id": "login.totp",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "totp"
+    },
+    {
+      "expected_path": "custom.text.Canary text",
+      "expected_value": "VCN-a38c5cf5bf05-CUSTOM-TEXT",
+      "feature_id": "custom.text",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "custom.hidden.Canary hidden",
+      "expected_value": "VCN-a38c5cf5bf05-CUSTOM-HIDDEN",
+      "feature_id": "custom.hidden",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "custom.boolean.Canary boolean",
+      "expected_value": "true",
+      "feature_id": "custom.boolean",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "custom.text.Unicode sample",
+      "expected_value": "VCN-a38c5cf5bf05-UNICODE-你好-مرحبا-🙂-é",
+      "feature_id": "unicode.roundtrip",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "folder",
+      "expected_value": "VCN-a38c5cf5bf05-FOLDER",
+      "feature_id": "folder.assignment",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "favorite",
+      "expected_value": true,
+      "feature_id": "favorite.status",
+      "item_title": "VaultCanary a38c5cf5bf05 — Login",
+      "kind": "boolean"
+    },
+    {
+      "expected_path": "notes",
+      "expected_value": "VCN-a38c5cf5bf05-SECURE-NOTE-BODY",
+      "feature_id": "secure_note.body",
+      "item_title": "VaultCanary a38c5cf5bf05 — Secure Note",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "card.cardholder",
+      "expected_value": "VCN-a38c5cf5bf05-CARDHOLDER",
+      "feature_id": "card.cardholder",
+      "item_title": "VaultCanary a38c5cf5bf05 — Card",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "card.number",
+      "expected_value": "4111111111111111",
+      "feature_id": "card.number",
+      "item_title": "VaultCanary a38c5cf5bf05 — Card",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "identity.email",
+      "expected_value": "identity+a38c5cf5bf05@example.invalid",
+      "feature_id": "identity.email",
+      "item_title": "VaultCanary a38c5cf5bf05 — Identity",
+      "kind": "exact"
+    },
+    {
+      "expected_path": "identity.address",
+      "expected_value": "VCN-a38c5cf5bf05-IDENTITY-ADDRESS",
+      "feature_id": "identity.address",
+      "item_title": "VaultCanary a38c5cf5bf05 — Identity",
+      "kind": "exact"
+    }
+  ],
+  "run_id": "a38c5cf5bf05",
+  "schema_version": 1,
+  "source_format": "bitwarden-json",
+  "synthetic_data": true,
+  "title_prefix": "VaultCanary a38c5cf5bf05 —",
+  "tool": "vaultcanary"
+}

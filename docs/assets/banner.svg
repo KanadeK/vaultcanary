@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">VaultCanary</title>
+  <desc id="desc">A canary carrying a check mark between two abstract vault doors.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102a43"/>
+      <stop offset="1" stop-color="#1f5f5b"/>
+    </linearGradient>
+    <linearGradient id="bird" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe27a"/>
+      <stop offset="1" stop-color="#f6ad32"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <g opacity=".2" fill="none" stroke="#d9f7ee" stroke-width="2">
+    <path d="M80 62h260M860 298h260M950 62h170M80 298h170"/>
+    <circle cx="1030" cy="174" r="98"/>
+    <circle cx="1030" cy="174" r="68"/>
+  </g>
+  <g transform="translate(104 76)">
+    <rect x="0" y="0" width="154" height="208" rx="18" fill="#0b1f33" stroke="#74c8b8" stroke-width="4"/>
+    <circle cx="77" cy="104" r="43" fill="none" stroke="#74c8b8" stroke-width="7"/>
+    <circle cx="77" cy="104" r="8" fill="#74c8b8"/>
+    <path d="M77 61v22m0 42v22m-43-43h22m42 0h22" stroke="#74c8b8" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(292 66)">
+    <ellipse cx="102" cy="111" rx="82" ry="73" fill="url(#bird)"/>
+    <circle cx="154" cy="73" r="49" fill="#ffd75d"/>
+    <path d="M197 72l42 14-42 16z" fill="#f47b20"/>
+    <circle cx="168" cy="58" r="6" fill="#102a43"/>
+    <path d="M46 111c29 4 50 22 59 55-39 2-70-16-82-47z" fill="#e89b25"/>
+    <path d="M78 178l-13 30m75-29 17 29" stroke="#f6ad32" stroke-width="8" stroke-linecap="round"/>
+    <path d="M116 105l20 20 42-49" fill="none" stroke="#174d45" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#f3fbf8" font-family="Segoe UI, Arial, sans-serif">
+    <text x="540" y="139" font-size="70" font-weight="750" letter-spacing="-2">VaultCanary</text>
+    <text x="544" y="191" font-size="26" fill="#bce8dd">Test the migration before trusting it.</text>
+    <text x="544" y="238" font-size="20" fill="#8fcfc1">synthetic probes · local audit · no real secrets</text>
+  </g>
+</svg>

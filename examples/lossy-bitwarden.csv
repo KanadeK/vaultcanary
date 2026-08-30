@@ -1,0 +1,5 @@
+folder,favorite,type,name,notes,fields,reprompt,login_uri,login_username,login_password,login_totp
+VCN-a38c5cf5bf05-FOLDER,1,login,VaultCanary a38c5cf5bf05 — Login,VCN-a38c5cf5bf05-LOGIN-NOTES,"Canary text: VCN-a38c5cf5bf05-CUSTOM-TEXT
+Canary hidden: VCN-a38c5cf5bf05-CUSTOM-HIDDEN
+Canary boolean: true
+Unicode sample: VCN-a38c5cf5bf05-UNICODE-你好-مرحبا-🙂-é",0,https://login-a38c5cf5bf05.example.invalid/account,canary+a38c5cf5bf05@example.invalid,VCN!a38c5cf5bf05!PASSWORD!7x,otpauth://totp/VaultCanary:a38c5cf5bf05?secret=IIQHIDG3SHHSNEW2PJWS72KGR5GNYZXR&issuer=VaultCanary&algorithm=SHA1&digits=6&period=30

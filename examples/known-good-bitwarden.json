@@ -1,0 +1,111 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "970fac8c-9d3d-5ccc-9a6a-64dc56aa8949",
+      "name": "VCN-a38c5cf5bf05-FOLDER"
+    }
+  ],
+  "items": [
+    {
+      "favorite": true,
+      "fields": [
+        {
+          "name": "Canary text",
+          "type": 0,
+          "value": "VCN-a38c5cf5bf05-CUSTOM-TEXT"
+        },
+        {
+          "name": "Canary hidden",
+          "type": 1,
+          "value": "VCN-a38c5cf5bf05-CUSTOM-HIDDEN"
+        },
+        {
+          "name": "Canary boolean",
+          "type": 2,
+          "value": "true"
+        },
+        {
+          "name": "Unicode sample",
+          "type": 0,
+          "value": "VCN-a38c5cf5bf05-UNICODE-你好-مرحبا-🙂-é"
+        }
+      ],
+      "folderId": "970fac8c-9d3d-5ccc-9a6a-64dc56aa8949",
+      "id": "b3795d27-4df6-5b5a-8eab-a09458349511",
+      "login": {
+        "password": "VCN!a38c5cf5bf05!PASSWORD!7x",
+        "totp": "otpauth://totp/VaultCanary:a38c5cf5bf05?secret=IIQHIDG3SHHSNEW2PJWS72KGR5GNYZXR&issuer=VaultCanary&algorithm=SHA1&digits=6&period=30",
+        "uris": [
+          {
+            "match": null,
+            "uri": "https://login-a38c5cf5bf05.example.invalid/account"
+          }
+        ],
+        "username": "canary+a38c5cf5bf05@example.invalid"
+      },
+      "name": "VaultCanary a38c5cf5bf05 — Login",
+      "notes": "VCN-a38c5cf5bf05-LOGIN-NOTES",
+      "reprompt": 0,
+      "type": 1
+    },
+    {
+      "favorite": false,
+      "folderId": null,
+      "id": "df365b05-f182-51d8-8bcf-2d629e593a1c",
+      "name": "VaultCanary a38c5cf5bf05 — Secure Note",
+      "notes": "VCN-a38c5cf5bf05-SECURE-NOTE-BODY",
+      "reprompt": 0,
+      "secureNote": {
+        "type": 0
+      },
+      "type": 2
+    },
+    {
+      "card": {
+        "brand": "Visa",
+        "cardholderName": "VCN-a38c5cf5bf05-CARDHOLDER",
+        "code": "123",
+        "expMonth": "12",
+        "expYear": "2030",
+        "number": "4111111111111111"
+      },
+      "favorite": false,
+      "folderId": null,
+      "id": "c59d2fff-466b-5fda-852a-e1b2a585ed2f",
+      "name": "VaultCanary a38c5cf5bf05 — Card",
+      "notes": null,
+      "reprompt": 0,
+      "type": 3
+    },
+    {
+      "favorite": false,
+      "folderId": null,
+      "id": "cb3dc580-4ee6-571d-9c46-fa4cf150e953",
+      "identity": {
+        "address1": "VCN-a38c5cf5bf05-IDENTITY-ADDRESS",
+        "address2": null,
+        "address3": null,
+        "city": "Example City",
+        "company": "VaultCanary",
+        "country": "ZZ",
+        "email": "identity+a38c5cf5bf05@example.invalid",
+        "firstName": "Canary",
+        "lastName": "a38c5cf5bf05",
+        "licenseNumber": null,
+        "middleName": null,
+        "passportNumber": null,
+        "phone": "+1-555-0100",
+        "postalCode": "00000",
+        "ssn": null,
+        "state": "EX",
+        "title": "Mx",
+        "username": null
+      },
+      "name": "VaultCanary a38c5cf5bf05 — Identity",
+      "notes": null,
+      "reprompt": 0,
+      "type": 4
+    }
+  ]
+}

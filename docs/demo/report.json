@@ -1,0 +1,117 @@
+{
+  "ok": false,
+  "results": [
+    {
+      "expected_path": "title",
+      "feature_id": "login.title",
+      "observed_path": "title",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "login.uri",
+      "feature_id": "login.uri",
+      "observed_path": "login.uri",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "login.username",
+      "feature_id": "login.username",
+      "observed_path": "login.username",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "login.password",
+      "feature_id": "login.password",
+      "observed_path": "login.password",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "notes",
+      "feature_id": "login.notes",
+      "observed_path": "notes",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "login.totp",
+      "feature_id": "login.totp",
+      "observed_path": "login.totp",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "custom.text.Canary text",
+      "feature_id": "custom.text",
+      "observed_path": "custom.text.Canary text",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "custom.hidden.Canary hidden",
+      "feature_id": "custom.hidden",
+      "observed_path": "custom.text.Canary hidden",
+      "status": "relocated"
+    },
+    {
+      "expected_path": "custom.boolean.Canary boolean",
+      "feature_id": "custom.boolean",
+      "observed_path": "custom.text.Canary boolean",
+      "status": "relocated"
+    },
+    {
+      "expected_path": "custom.text.Unicode sample",
+      "feature_id": "unicode.roundtrip",
+      "observed_path": "custom.text.Unicode sample",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "folder",
+      "feature_id": "folder.assignment",
+      "observed_path": "tag.0",
+      "status": "relocated"
+    },
+    {
+      "expected_path": "favorite",
+      "feature_id": "favorite.status",
+      "observed_path": "favorite",
+      "status": "preserved"
+    },
+    {
+      "expected_path": "notes",
+      "feature_id": "secure_note.body",
+      "observed_path": null,
+      "status": "missing"
+    },
+    {
+      "expected_path": "card.cardholder",
+      "feature_id": "card.cardholder",
+      "observed_path": null,
+      "status": "missing"
+    },
+    {
+      "expected_path": "card.number",
+      "feature_id": "card.number",
+      "observed_path": null,
+      "status": "missing"
+    },
+    {
+      "expected_path": "identity.email",
+      "feature_id": "identity.email",
+      "observed_path": null,
+      "status": "missing"
+    },
+    {
+      "expected_path": "identity.address",
+      "feature_id": "identity.address",
+      "observed_path": null,
+      "status": "missing"
+    }
+  ],
+  "return_format": "1password-1pux",
+  "run_id": "a38c5cf5bf05",
+  "schema_version": 1,
+  "summary": {
+    "missing": 5,
+    "preserved": 9,
+    "relocated": 3,
+    "total": 17
+  },
+  "tool": "vaultcanary"
+}
