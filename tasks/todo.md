@@ -39,21 +39,21 @@
 
 - [x] RED: reports agree and exclude unrelated target values.
 - [x] GREEN: stable JSON and standalone escaped HTML reports.
-- [ ] Commit known-good, lossy CSV, and lossy 1PUX examples.
+- [x] Commit known-good, lossy CSV, and lossy 1PUX examples.
 - Verify: example acceptance commands.
 - Dependencies: Task 5.
 
 ## Task 7: User and maintainer documentation
 
-- [ ] README and Chinese quick start include install, acceptance, limits, and repair flow.
-- [ ] Architecture/security/research/contributing/changelog/release notes are current.
+- [x] README and Chinese quick start include install, acceptance, limits, and repair flow.
+- [x] Architecture/security/research/contributing/changelog/release notes are current.
 - Verify: every documented command exists and is exercised by the gate.
 - Dependencies: Tasks 5-6.
 
 ## Task 8: CI and release packaging
 
-- [ ] CI runs format, lint, types, tests, audit, examples, build, and clean install.
-- [ ] Release workflow publishes wheel, sdist, example bundle, notes, and checksums.
+- [x] CI runs format, lint, types, tests, audit, examples, build, and clean install.
+- [x] Release workflow publishes wheel, sdist, example bundle, notes, and checksums.
 - Verify: `python scripts/check.py` passes end to end.
 - Dependencies: Tasks 1-7.
 

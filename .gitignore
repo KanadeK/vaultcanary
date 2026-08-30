@@ -6,6 +6,7 @@ __pycache__/
 .pytest-tmp/
 .mypy_cache/
 .ruff_cache/
+.uv-cache/
 .venv/
 .gate-venv/
 build/

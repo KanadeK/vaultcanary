@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "vaultcanary"
 version = "0.1.0"
 description = "Test password-manager migration fidelity with disposable synthetic canaries."
+readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -33,6 +34,12 @@ classifiers = [
 ]
 dependencies = []
 
+[project.urls]
+Homepage = "https://github.com/KanadeK/vaultcanary"
+Documentation = "https://github.com/KanadeK/vaultcanary#readme"
+Issues = "https://github.com/KanadeK/vaultcanary/issues"
+Changelog = "https://github.com/KanadeK/vaultcanary/blob/main/CHANGELOG.md"
+
 [project.scripts]
 vaultcanary = "vaultcanary.cli:main"
 
@@ -55,7 +62,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [tool.pytest.ini_options]
-addopts = "--strict-config --strict-markers --basetemp=.pytest-tmp --cov=vaultcanary --cov-report=term-missing --cov-fail-under=90"
+addopts = "--strict-config --strict-markers -p no:cacheprovider --cov=vaultcanary --cov-report=term-missing --cov-fail-under=90"
 testpaths = ["tests"]
 
 [tool.coverage.run]
