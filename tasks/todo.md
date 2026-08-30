@@ -16,29 +16,29 @@
 
 ## Task 3: Bitwarden round-trip adapters
 
-- [ ] RED: tests cover JSON preservation, CSV losses, wrong run, and malformed input.
+- [x] RED: tests cover JSON preservation, CSV losses, wrong run, and malformed input.
 - [x] GREEN: normalize documented Bitwarden JSON and CSV fields.
 - Verify: focused adapter tests.
 - Dependencies: Task 2.
 
 ## Task 4: 1Password 1PUX adapter
 
-- [ ] RED: tests cover realistic 1PUX, missing member, oversized member, and relocation.
+- [x] RED: tests cover realistic 1PUX, missing member, oversized member, and relocation.
 - [x] GREEN: read `export.data` in memory and normalize canary items.
 - Verify: focused 1PUX tests.
 - Dependencies: Task 2.
 
 ## Task 5: Audit and CLI exit contract
 
-- [ ] RED: tests prove exit 0, 1, and 2.
-- [ ] GREEN: audit semantic feature paths and emit concise terminal results.
+- [x] RED: tests prove exit 0, 1, and 2.
+- [x] GREEN: audit semantic feature paths and emit concise terminal results.
 - Verify: CLI integration tests.
 - Dependencies: Tasks 3-4.
 
 ## Task 6: Reports and examples
 
-- [ ] RED: reports agree and exclude unrelated target values.
-- [ ] GREEN: stable JSON and standalone escaped HTML reports.
+- [x] RED: reports agree and exclude unrelated target values.
+- [x] GREEN: stable JSON and standalone escaped HTML reports.
 - [ ] Commit known-good, lossy CSV, and lossy 1PUX examples.
 - Verify: example acceptance commands.
 - Dependencies: Task 5.

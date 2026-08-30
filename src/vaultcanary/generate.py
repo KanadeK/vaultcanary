@@ -177,6 +177,8 @@ def build_bundle(*, seed: str | None) -> Bundle:
 def write_bundle(output_dir: Path, *, seed: str | None) -> WrittenBundle:
     """Write a generated bundle to a new or empty directory."""
 
+    if output_dir.exists() and any(output_dir.iterdir()):
+        raise FileExistsError(f"output directory is not empty: {output_dir}")
     output_dir.mkdir(parents=True, exist_ok=True)
     bundle = build_bundle(seed=seed)
     probe_path = output_dir / "vaultcanary-bitwarden.json"
