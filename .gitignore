@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+.pytest_cache/
+.pytest-tmp/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.gate-venv/
+build/
+dist/
+release/
+.gate-*/
+out/
+.DS_Store
+Thumbs.db
