@@ -17,14 +17,14 @@
 ## Task 3: Bitwarden round-trip adapters
 
 - [ ] RED: tests cover JSON preservation, CSV losses, wrong run, and malformed input.
-- [ ] GREEN: normalize documented Bitwarden JSON and CSV fields.
+- [x] GREEN: normalize documented Bitwarden JSON and CSV fields.
 - Verify: focused adapter tests.
 - Dependencies: Task 2.
 
 ## Task 4: 1Password 1PUX adapter
 
 - [ ] RED: tests cover realistic 1PUX, missing member, oversized member, and relocation.
-- [ ] GREEN: read `export.data` in memory and normalize canary items.
+- [x] GREEN: read `export.data` in memory and normalize canary items.
 - Verify: focused 1PUX tests.
 - Dependencies: Task 2.
 
