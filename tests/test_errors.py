@@ -117,6 +117,16 @@ def test_1pux_rejects_bad_zip_bad_json_and_oversized_member(tmp_path: Path) -> N
     with pytest.raises(ExportError, match="larger than"):
         load_export(oversized, max_bytes=1024)
 
+    duplicate = tmp_path / "duplicate.1pux"
+    with (
+        pytest.warns(UserWarning, match="Duplicate name"),
+        zipfile.ZipFile(duplicate, "w") as archive,
+    ):
+        archive.writestr("export.data", '{"accounts": []}')
+        archive.writestr("export.data", '{"accounts": []}')
+    with pytest.raises(ExportError, match=r"exactly one export\.data"):
+        load_export(duplicate)
+
 
 def _valid_manifest_payload() -> dict[str, object]:
     return build_bundle(seed="manifest-errors").manifest
@@ -174,6 +184,18 @@ def test_manifest_rejects_duplicate_features_bad_values_and_foreign_items(tmp_pa
         path.write_text(json.dumps(payload), encoding="utf-8")
         with pytest.raises(AuditError, match=message):
             load_manifest(path)
+
+
+def test_manifest_rejects_terminal_control_characters(tmp_path: Path) -> None:
+    payload = _valid_manifest_payload()
+    features = payload["features"]
+    assert isinstance(features, list)
+    features[0]["feature_id"] = "login.\x1b[31mred"
+    path = tmp_path / "terminal-control.json"
+    path.write_text(json.dumps(payload), encoding="utf-8")
+
+    with pytest.raises(AuditError, match="control characters"):
+        load_manifest(path)
 
 
 def test_audit_rejects_duplicate_canary_titles(tmp_path: Path) -> None:

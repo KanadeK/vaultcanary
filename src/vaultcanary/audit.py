@@ -197,4 +197,6 @@ def _normalized_totp(value: str) -> tuple[str, str, tuple[tuple[str, str], ...]]
 def _nonempty_string(value: Any, label: str) -> str:
     if not isinstance(value, str) or not value:
         raise AuditError(f"{label} must be a non-empty string")
+    if any(ord(character) < 32 or ord(character) == 127 for character in value):
+        raise AuditError(f"{label} must not contain control characters")
     return value

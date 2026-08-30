@@ -178,10 +178,12 @@ def _parse_csv_fields(value: str) -> Iterable[tuple[str, str]]:
 def _load_1pux(path: Path, title_prefix: str | None, max_bytes: int) -> NormalizedVault:
     try:
         with zipfile.ZipFile(path) as archive:
-            try:
-                member = archive.getinfo("export.data")
-            except KeyError as error:
-                raise ExportError("1PUX archive is missing export.data") from error
+            members = [member for member in archive.infolist() if member.filename == "export.data"]
+            if not members:
+                raise ExportError("1PUX archive is missing export.data")
+            if len(members) != 1:
+                raise ExportError("1PUX archive must contain exactly one export.data member")
+            member = members[0]
             if member.file_size > max_bytes:
                 raise ExportError(f"1PUX export.data is larger than {max_bytes} bytes")
             raw = archive.read(member)
