@@ -6,7 +6,7 @@
 
 [![CI](https://github.com/KanadeK/vaultcanary/actions/workflows/ci.yml/badge.svg)](https://github.com/KanadeK/vaultcanary/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/KanadeK/vaultcanary)](https://github.com/KanadeK/vaultcanary/releases/latest)
-[![Coverage](https://img.shields.io/badge/branch_coverage-94.29%25-2f855a)](#acceptance)
+[![Coverage](https://img.shields.io/badge/branch_coverage-94.37%25-2f855a)](#acceptance)
 [![Runtime dependencies](https://img.shields.io/badge/runtime_dependencies-0-276749)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-d69e2e)](LICENSE)
 

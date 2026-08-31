@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import zipfile
 from pathlib import Path
 
 from vaultcanary.generate import build_bundle, write_bundle
@@ -56,3 +57,9 @@ def test_write_bundle_produces_identical_bytes_for_the_same_seed(tmp_path: Path)
 
 def test_unseeded_bundles_use_distinct_run_ids() -> None:
     assert build_bundle(seed=None).run_id != build_bundle(seed=None).run_id
+
+
+def test_committed_1pux_avoids_platform_dependent_deflate_bytes() -> None:
+    example = Path(__file__).resolve().parents[1] / "examples" / "lossy-1password.1pux"
+    with zipfile.ZipFile(example) as archive:
+        assert {member.compress_type for member in archive.infolist()} == {zipfile.ZIP_STORED}

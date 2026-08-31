@@ -1,0 +1,4 @@
+examples/*.json text eol=lf
+examples/*.csv text eol=lf
+examples/README.md text eol=lf
+examples/*.1pux binary
