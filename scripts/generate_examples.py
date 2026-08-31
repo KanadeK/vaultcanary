@@ -155,6 +155,7 @@ def _write_lossy_1pux(path: Path, probe: dict[str, Any]) -> None:
 
 def _write_zip_member(archive: zipfile.ZipFile, name: str, value: dict[str, Any]) -> None:
     info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+    info.create_system = 3
     info.compress_type = zipfile.ZIP_STORED
     info.external_attr = 0o644 << 16
     archive.writestr(info, json.dumps(value, ensure_ascii=False, sort_keys=True) + "\n")

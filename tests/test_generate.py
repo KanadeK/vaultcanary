@@ -63,3 +63,4 @@ def test_committed_1pux_avoids_platform_dependent_deflate_bytes() -> None:
     example = Path(__file__).resolve().parents[1] / "examples" / "lossy-1password.1pux"
     with zipfile.ZipFile(example) as archive:
         assert {member.compress_type for member in archive.infolist()} == {zipfile.ZIP_STORED}
+        assert {member.create_system for member in archive.infolist()} == {3}
