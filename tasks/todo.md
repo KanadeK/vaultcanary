@@ -1,4 +1,4 @@
-# VaultCanary v0.1.0 Tasks
+# VaultCanary v0.1.1 Tasks
 
 ## Task 1: Repository and contracts
 
@@ -61,12 +61,20 @@
 
 - [x] Five-axis code/security review has no unresolved required findings.
 - [x] Git history, author, staged secrets, and contributor identity are clean.
-- [ ] Public repository, CI, annotated tag, and Release assets are verified online.
-- Verify: fresh archive/wheel execution and public GitHub checks.
+- [x] Public repository, CI, annotated tag, and Release assets are verified online.
+- Verified: v0.1.1 points to `5ad564c818a2f2db6012421e0b13f6192615bd8c`;
+  [CI 37735917503](https://github.com/KanadeK/vaultcanary/actions/runs/37735917503)
+  passed Ubuntu/Windows with Python 3.11/3.14 and the clean-wheel release gate.
+- Verified: [Release 37736174593](https://github.com/KanadeK/vaultcanary/actions/runs/37736174593)
+  published a non-draft, non-prerelease release with wheel, sdist, example ZIP, and
+  checksums. A fresh installation from anonymous public downloads passed the known-good,
+  lossy, invalid-input, and new-canary flows with the expected exit codes. Contributor
+  and tagger checks returned only KanadeK.
 - Dependencies: Task 8.
 
 ## Task 10: Notification
 
-- [ ] Send Gmail to `me` only after Task 9 is complete.
-- Verify: Gmail API returns a sent message ID.
+- [x] Send Gmail to `me` only after Task 9 is complete.
+- Verified on 2026-10-07: the Gmail API returned a message ID with the `SENT` label for
+  `[OSS 发布完成] VaultCanary v0.1.1`.
 - Dependencies: Task 9.

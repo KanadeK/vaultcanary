@@ -54,7 +54,7 @@ the wrong kind of field.”
 Python 3.11 or newer is required.
 
 ```console
-python -m pip install vaultcanary-0.1.1-py3-none-any.whl
+python -m pip install https://github.com/KanadeK/vaultcanary/releases/download/v0.1.1/vaultcanary-0.1.1-py3-none-any.whl
 vaultcanary generate canary-run
 ```
 
