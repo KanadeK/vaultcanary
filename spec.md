@@ -194,7 +194,7 @@ system's normal secure workflow after verification.
 5. JSON and standalone HTML reports agree with terminal results and contain no
    arbitrary values from unrelated target items.
 6. The full local release gate and GitHub CI pass on Windows and Linux.
-7. A tagged v0.1.0 GitHub Release contains wheel, sdist, example bundle, release notes,
+7. A tagged GitHub Release contains wheel, sdist, example bundle, release notes,
    and checksums; its contributor list contains only the owner's intended identity.
 8. Only after remote verification, a Gmail message to `me` includes the public repo,
    release URL, install command, acceptance command, and limitations.

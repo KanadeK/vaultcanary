@@ -54,7 +54,7 @@ the wrong kind of field.”
 Python 3.11 or newer is required.
 
 ```console
-python -m pip install vaultcanary-0.1.0-py3-none-any.whl
+python -m pip install vaultcanary-0.1.1-py3-none-any.whl
 vaultcanary generate canary-run
 ```
 
@@ -163,7 +163,7 @@ uv --cache-dir ..\.uv-cache-vaultcanary sync --extra dev --frozen
 uv --cache-dir ..\.uv-cache-vaultcanary run --frozen python scripts/check.py
 ```
 
-The gate runs Ruff formatting/lint, strict mypy, 38+ tests with at least 90% branch
+The gate runs Ruff formatting/lint, strict mypy, 40 tests with at least 90% branch
 coverage, dependency audit, all three committed examples, wheel/sdist metadata checks,
 a clean-wheel installation, and the installed console entrypoint.
 

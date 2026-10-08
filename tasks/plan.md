@@ -64,7 +64,7 @@ Checkpoint: full local release gate passes from the project root.
 ### Phase 4: Public release
 
 - Task 9: review author/contributor/security state, create public repo, and push.
-- Task 10: wait for CI, create annotated v0.1.0 tag, verify Release assets, then email.
+- Task 10: wait for CI, create the release's annotated tag, verify assets, then email.
 
 ## Risks and mitigations
 

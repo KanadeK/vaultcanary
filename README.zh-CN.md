@@ -20,7 +20,7 @@ VaultCanary 会生成一个完全虚构的 Bitwarden JSON 测试库，其中放�
 需要 Python 3.11 及以上版本。
 
 ```console
-python -m pip install vaultcanary-0.1.0-py3-none-any.whl
+python -m pip install vaultcanary-0.1.1-py3-none-any.whl
 vaultcanary generate canary-run
 ```
 
